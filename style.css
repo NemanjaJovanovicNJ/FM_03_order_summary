@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  /* z-index: 1; */
+  margin: 0 auto;
+  max-width: 45rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+}
+.main {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: hsla(223, 47%, 23%, 0.95);
+  margin-bottom: 2.5rem;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  color: rgba(114, 128, 167, 0.766);
+}
+.plan-box {
+  background-color: hsla(228, 100%, 98%, 0.668);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  justify-content: space-between;
+}
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.plan-heading {
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: hsla(223, 47%, 23%, 0.95);
+}
+.plan-price {
+  font-size: 1.6rem;
+  color: hsla(224, 23%, 55%, 0.87);
+}
+.plan-change:link,
+.plan-change:active {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(33, 71, 175);
+  text-decoration: underline;
+}
+
+.plan-change:hover,
+.plan-change:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(253, 58%, 59%);
+}
+
+.btn-pay {
+  height: 4.5rem;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 0.1rem 2rem 0 rgba(125, 126, 129, 0.874);
+}
+.btn-pay:hover {
+  background-color: hsla(253, 83%, 47%, 0.63);
+}
+
+.btn-cancel {
+  height: 4.5rem;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 2.5rem;
+  color: hsla(224, 23%, 55%, 0.87);
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+.btn-cancel:hover {
+  color: #333;
+}
+
+@media (max-width: 90em) {
+  .container {
+    background-size: auto;
+  }
+}
+@media (max-width: 30em) {
+  .container {
+    background-image: none;
+  }
+  .card {
+    max-width: 32.5rem;
+  }
+  .img-box {
+    margin-bottom: 2.5rem;
+  }
+  .main {
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .text {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+  .plan-heading {
+    font-size: 1.5rem;
+  }
+  .plan-price {
+    font-size: 1.4rem;
+  }
+  .btn-pay {
+    margin-bottom: 1rem;
+    box-shadow: 0 0.1rem 1rem 0 rgba(125, 126, 129, 0.874);
+  }
+
+  .btn-cancel {
+    margin-bottom: 1rem;
+  }
+}
